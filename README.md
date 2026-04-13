@@ -37,8 +37,8 @@ EV 충전기 환경을 가정해 공격 시나리오를 탐지하고,
 - 인프라 코드화 (Terraform)
 - IoT / AWS / 보안 통합 이해
 
-🔗 https://github.com/woorung222/cloud-ev-security
-
+🔗 [https://github.com/woorung222/cloud-ev-security
+](https://github.com/sung0810/cloud-ev-security)
 ---
 
 ### 2. 리눅스 취약점 진단 및 조치 자동화
