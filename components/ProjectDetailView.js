@@ -17,6 +17,12 @@ function getMediaTitle(project, t) {
   return t.mediaCandidates;
 }
 
+function getMediaSrc(video) {
+  if (!video) return null;
+  if (/^https?:\/\//i.test(video)) return video;
+  return `/${video.replace(/^\/+/, "")}`;
+}
+
 export default function ProjectDetailView({ project, constellation }) {
   const { language } = useLanguage();
   const t = uiText[language];
@@ -65,6 +71,7 @@ export default function ProjectDetailView({ project, constellation }) {
     project.id === "cloud-ev-security" ||
     project.id === "pentest-web" ||
     project.id === "isms-automation";
+  const mediaSrc = getMediaSrc(localizedProject.media?.video);
 
   return (
     <main className="portfolio-shell detail-shell">
@@ -389,8 +396,8 @@ export default function ProjectDetailView({ project, constellation }) {
             <h2>{getMediaTitle(localizedProject, t)}</h2>
             <p>{localizedProject.media.candidates.join(" · ")}</p>
           </div>
-          {localizedProject.media.video ? (
-            <video controls preload="metadata" src={`/${localizedProject.media.video}`} />
+          {mediaSrc ? (
+            <video controls preload="metadata" src={mediaSrc} />
           ) : (
             <div className="media-placeholder">
               <span>

@@ -10,5 +10,7 @@ docs/
 .plan-inspect/
 tmp_*
 tmp_aegis_pptx_extract/
+.deploy/
 /video/
 /public/video/
+/ssh/
