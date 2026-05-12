@@ -7,11 +7,6 @@ function getProject(id) {
   return projects.find((project) => project.id === id);
 }
 
-function toPublicProject(project) {
-  const { localSource, nextSteps, ...publicProject } = project;
-  return publicProject;
-}
-
 export function generateStaticParams() {
   return projects.map((project) => ({ id: project.id }));
 }
@@ -35,5 +30,5 @@ export default async function ProjectDetailPage({ params }) {
   const constellation = getConstellation(project.id);
   if (!constellation) notFound();
 
-  return <ProjectDetailView project={toPublicProject(project)} constellation={constellation} />;
+  return <ProjectDetailView project={project} constellation={constellation} />;
 }

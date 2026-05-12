@@ -8,9 +8,9 @@ export const constellations = {
     motif: "Shield Radar",
     tone: "gold",
     stars: [
-      star("guardduty", "GuardDuty", "security", 50, 16, "위협 탐지의 시작점. GuardDuty Finding을 이벤트 기반 대응 흐름으로 연결한다.", ["README MITRE ATT&CK 대응 매핑", "video/aegis.mp4"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]),
+      star("guardduty", "GuardDuty", "security", 50, 16, "위협 탐지의 시작점. GuardDuty Finding을 이벤트 기반 대응 흐름으로 연결한다.", ["README MITRE ATT&CK 대응 매핑", "시연 영상 서버 이전 예정"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]),
       star("eventbridge", "이벤트/아키텍처 흐름", "stack", 32, 31, "IoT Core, GuardDuty, EventBridge, Lambda, 저장소와 알림이 이어지는 전체 이벤트 흐름.", ["AEGIS 전체 아키텍처"], ["terraform/modules/eventbridge"]),
-      star("lambda", "Lambda 대응", "feature", 68, 31, "공격 유형별 대응을 분기해 격리, 차단, 로그 보존 같은 조치를 실행한다.", ["Lambda 실행 결과 후보", "video/aegis.mp4"], ["lambda/handler.py"]),
+      star("lambda", "Lambda 대응", "feature", 68, 31, "공격 유형별 대응을 분기해 격리, 차단, 로그 보존 같은 조치를 실행한다.", ["Lambda 실행 결과 후보", "시연 영상 서버 이전 예정"], ["lambda/handler.py"]),
       star("isolate", "IoT 격리", "security", 22, 56, "IoT 정책 분리, 인증서 revoke 등 피해 확산을 줄이는 자동 대응 포인트.", ["T0855/T1078 대응 매핑"], ["terraform/modules/iot", "lambda/handler.py"]),
       star("evidence", "관측/감사 로그", "outcome", 50, 73, "CloudWatch 지표, CloudTrail 감사 로그, DynamoDB 이벤트 저장으로 대응 이후 추적성을 확보한다.", ["코드 기반 관측/감사 구조"], ["terraform/modules/monitoring"]),
       star("dashboard", "운영 대시보드", "feature", 78, 56, "지도, 이벤트 로그, 공격 시뮬레이터, 충전기 상태를 보는 AEGIS 운영 화면.", ["AEGIS 대시보드 화면"], ["lambda/stats_handler.py", "lambda/simulate_handler.py"])

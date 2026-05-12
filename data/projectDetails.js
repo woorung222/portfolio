@@ -27,7 +27,7 @@ const projectDetails = {
         { title: "진단 이력 조회", source: "README 기반 공개 이미지", status: "진단 결과 조회/필터링 흐름", src: "/projects/isms-automation/evidence/diagnosis-history.png", alt: "ISMS 진단 이력 조회 화면" },
         { title: "리포트 생성 흐름", source: "README 기반 공개 이미지", status: "결과 적재 후 보고서화 증빙", src: "/projects/isms-automation/evidence/report-flow.png", alt: "ISMS 리포트 생성 화면" },
         { title: "코드 근거: DB/Watchdog", source: "로컬 소스 확인 완료", status: "이미지 대신 코드 설명 카드로 보강" },
-        { title: "시연 영상", source: "기존 시연영상", status: "페이지 하단에서 재생 가능" }
+        { title: "시연 영상", source: "기존 시연영상", status: "외부 영상 서버 이전 예정" }
       ],
       codeHighlights: [
         { title: "Streamlit dashboard", path: "dashboard/app.py", note: "진단 결과 조회, 보안 이행률 시각화, 리포트 생성 화면을 담당한다. 포트폴리오에서는 사용자가 결과를 어떻게 탐색하는지와 DB 조회 흐름을 함께 설명한다." },
@@ -68,7 +68,7 @@ const projectDetails = {
         { title: "대시보드 지표", source: "선별 이미지", status: "별 상세 영역에서 사용" },
         { title: "관측/감사 로그 구조", source: "Terraform/저장소 코드 기반", status: "별 상세 영역에서 코드 카드로 설명" },
         { title: "Terraform/Lambda 주요 코드", source: "로컬 소스 확인 완료", status: "별 상세 영역에서 코드 카드로 사용" },
-        { title: "시연 영상", source: "기존 시연영상", status: "페이지 하단에서 재생 가능" }
+        { title: "시연 영상", source: "기존 시연영상", status: "외부 영상 서버 이전 예정" }
       ],
       codeHighlights: [
         { title: "Threat response handler", path: "lambda/handler.py", note: "탐지 이벤트를 공격 유형별 대응 로직으로 라우팅하는 핵심 Lambda 코드다. 격리, 차단, 로그 보존 같은 방어 중심 흐름을 설명한다." },
@@ -120,7 +120,7 @@ const projectDetails = {
         { title: "전자결재/급여명세 점검", source: "로컬 소스 확인 완료", status: "이미지 대신 코드 설명 카드로 보강" },
         { title: "보안 설정 검토", source: "Spring Boot 설정 코드 기반", status: "CORS, 쿠키, 헤더 개선 관점으로 설명" },
         { title: "보고서 작성 증빙", source: "마스킹된 목차/요약만 사용", status: "원본 문서와 민감 샘플은 비공개" },
-        { title: "시연 영상", source: "기존 시연영상", status: "페이지 하단에서 재생 가능" }
+        { title: "시연 영상", source: "기존 시연영상", status: "외부 영상 서버 이전 예정" }
       ],
       codeHighlights: [
         { title: "Authentication flow", path: "AuthController.java / AuthService.java", note: "로그인과 세션 처리 흐름을 보여주는 코드 후보다. 포트폴리오에서는 인증 우회 절차가 아니라 서버 측 인증 정책과 검증 기준을 설명한다." },
@@ -165,7 +165,7 @@ const projectDetails = {
         { title: "Diagnosis history lookup", source: "Public README image", status: "Diagnosis result lookup and filtering flow", src: "/projects/isms-automation/evidence/diagnosis-history.png", alt: "ISMS diagnosis history lookup screen" },
         { title: "Report generation flow", source: "Public README image", status: "Evidence of result ingestion and report output", src: "/projects/isms-automation/evidence/report-flow.png", alt: "ISMS report generation screen" },
         { title: "Code evidence: DB/Watchdog", source: "Local source verified", status: "Covered through code cards instead of an image" },
-        { title: "Demo video", source: "Existing demo video", status: "Playable at the bottom of the page" }
+        { title: "Demo video", source: "Existing demo video", status: "To be moved to an external video server" }
       ],
       codeHighlights: [
         { title: "Streamlit dashboard", path: "dashboard/app.py", note: "Handles diagnosis result lookup, security fulfillment visualization, and report generation. The portfolio explanation should connect the user-facing dashboard to the DB query flow." },
@@ -206,7 +206,7 @@ const projectDetails = {
         { title: "Dashboard metrics", source: "Selected image", status: "Used in star detail area" },
         { title: "Observability and audit structure", source: "Terraform/storage code based", status: "Explained as code cards in the star detail area" },
         { title: "Terraform/Lambda key code", source: "Local source verified", status: "Used as star-level code cards" },
-        { title: "Demo video", source: "Existing demo video", status: "Playable at the bottom of the page" }
+        { title: "Demo video", source: "Existing demo video", status: "To be moved to an external video server" }
       ],
       codeHighlights: [
         { title: "Threat response handler", path: "lambda/handler.py", note: "Routes detection events into response logic by attack type. This is the main code card for automated defensive response such as isolation, blocking, and evidence logging." },
@@ -258,7 +258,7 @@ const projectDetails = {
         { title: "Approval / payslip assessment", source: "Local source verified", status: "Covered through code cards instead of an image" },
         { title: "Security configuration review", source: "Spring Boot config code", status: "Explained through CORS, cookie, and header remediation criteria" },
         { title: "Report-writing evidence", source: "Masked outline/summary only", status: "Original report and sensitive samples stay private" },
-        { title: "Demo video", source: "Existing demo video", status: "Playable at the bottom of the page" }
+        { title: "Demo video", source: "Existing demo video", status: "To be moved to an external video server" }
       ],
       codeHighlights: [
         { title: "Authentication flow", path: "AuthController.java / AuthService.java", note: "Shows login and session handling. The portfolio explanation focuses on server-side authentication policy and verification criteria, not bypass reproduction." },

@@ -5,11 +5,22 @@
     "period": "2024.05",
     "collectionOrder": 1,
     "displayPriority": 6,
-    "category": ["Android", "Frontend/App"],
+    "category": [
+      "Android",
+      "Frontend/App"
+    ],
     "role": "Android 앱 구조 구성, 화면 전환, 시설별 Activity 구성, UI 구현",
     "summary": "Kotlin 기반 Android 여가/시설 탐색 앱 프로토타입.",
     "problem": "사용자가 앱에서 여러 시설 유형을 선택하고 화면별 기능을 탐색할 수 있는 모바일 UI 흐름을 구현한다.",
-    "techStack": ["Kotlin", "Android SDK", "Gradle Kotlin DSL", "Jetpack Compose", "AppCompat", "Material", "ViewBinding"],
+    "techStack": [
+      "Kotlin",
+      "Android SDK",
+      "Gradle Kotlin DSL",
+      "Jetpack Compose",
+      "AppCompat",
+      "Material",
+      "ViewBinding"
+    ],
     "highlights": [
       "Splash/Main 화면과 시설 선택 화면 구성",
       "당구장/볼링장/PC방/노래방 등 시설별 Activity 분리",
@@ -25,15 +36,15 @@
     "media": {
       "status": "execution-deferred",
       "video": null,
-      "candidates": ["Android Emulator 실행 화면 캡처"]
+      "candidates": [
+        "Android Emulator 실행 화면 캡처"
+      ]
     },
-    "localSource": null,
     "codeNotes": [
       "app/build.gradle.kts: Android/Compose 빌드 설정",
       "app/src/main/AndroidManifest.xml: Activity 구성과 exported 설정"
     ],
-    "status": "execution-deferred",
-    "nextSteps": ["Android Studio 설치 후 Gradle 빌드 검증", "에뮬레이터 화면 캡처"]
+    "status": "execution-deferred"
   },
   {
     "id": "bookstar-new",
@@ -41,11 +52,23 @@
     "period": "2025.05 ~ 2025.06",
     "collectionOrder": 2,
     "displayPriority": 4,
-    "category": ["Backend", "Recommendation", "Web"],
+    "category": [
+      "Backend",
+      "Recommendation",
+      "Web"
+    ],
     "role": "프론트엔드 웹 구현, 사용자/피드/좋아요/북마크/팔로워 테이블 설계 및 구현, KoBERT 기반 유사도 분석",
     "summary": "개인화 도서 리뷰 피드와 추천 기능을 제공하는 Django 웹 플랫폼.",
     "problem": "사용자 리뷰/취향 데이터를 활용해 도서 탐색과 추천 경험을 개선한다.",
-    "techStack": ["Django", "AWS", "NCF", "KoBERT", "Naver Book API", "Web Crawling", "SQLite"],
+    "techStack": [
+      "Django",
+      "AWS",
+      "NCF",
+      "KoBERT",
+      "Naver Book API",
+      "Web Crawling",
+      "SQLite"
+    ],
     "highlights": [
       "회원가입/로그인/로그아웃",
       "도서 리뷰 피드 작성/수정/삭제, 좋아요, 북마크, 팔로우",
@@ -62,16 +85,20 @@
     "media": {
       "status": "available-in-readme",
       "video": null,
-      "candidates": ["홈 화면", "게시글 작성 화면", "도서 추천 페이지", "회원가입 화면", "로그인 화면"]
+      "candidates": [
+        "홈 화면",
+        "게시글 작성 화면",
+        "도서 추천 페이지",
+        "회원가입 화면",
+        "로그인 화면"
+      ]
     },
-    "localSource": null,
     "codeNotes": [
       "사용자/피드/북마크/팔로우 모델",
       "추천 점수 결합 로직",
       "KoBERT 유사도 분석 진입 코드"
     ],
-    "status": "partial-runnable",
-    "nextSteps": ["Django 의존성 확인", "데이터셋/환경변수 확인", "추천 페이지 실행 캡처"]
+    "status": "partial-runnable"
   },
   {
     "id": "hearthstock",
@@ -79,11 +106,20 @@
     "period": "2025.09 ~ 2025.12",
     "collectionOrder": 3,
     "displayPriority": 5,
-    "category": ["Game", "Simulation"],
+    "category": [
+      "Game",
+      "Simulation"
+    ],
     "role": "이벤트 로직, 랜덤 요소, 게임 진행 흐름 구현에 참여",
     "summary": "Unity 기반 이벤트/랜덤 요소가 포함된 게임 프로젝트.",
     "problem": "게임 내 이벤트 선택, 랜덤 뽑기, 날짜 진행 등 상호작용 로직을 구현한다.",
-    "techStack": ["Unity 6000.0.24f1", "C#", "Universal Render Pipeline", "Unity Input System", "XCharts"],
+    "techStack": [
+      "Unity 6000.0.24f1",
+      "C#",
+      "Universal Render Pipeline",
+      "Unity Input System",
+      "XCharts"
+    ],
     "highlights": [
       "게임 이벤트 선택 및 처리",
       "랜덤 뽑기/상태 변화 로직",
@@ -99,16 +135,18 @@
     "media": {
       "status": "execution-deferred",
       "video": null,
-      "candidates": ["Unity Play Mode 캡처", "이벤트 발생 장면", "주요 UI 화면"]
+      "candidates": [
+        "Unity Play Mode 캡처",
+        "이벤트 발생 장면",
+        "주요 UI 화면"
+      ]
     },
-    "localSource": null,
     "codeNotes": [
       "이벤트 처리 스크립트",
       "랜덤 뽑기/날짜 진행 로직",
       "차트/상태 표시 관련 UI 코드"
     ],
-    "status": "execution-deferred",
-    "nextSteps": ["Unity 설치 후 6000.0.24f1 프로젝트 열기", "Play Mode 검증", "이벤트 화면 캡처"]
+    "status": "execution-deferred"
   },
   {
     "id": "isms-automation",
@@ -116,11 +154,23 @@
     "period": "2026.02",
     "collectionOrder": 4,
     "displayPriority": 3,
-    "category": ["Security", "Automation", "Backend"],
+    "category": [
+      "Security",
+      "Automation",
+      "Backend"
+    ],
     "role": "자동 진단/조치 구조 설계, Rocky Linux/Ubuntu 스크립트 작성, 결과 적재/대시보드 연계에 참여",
     "summary": "KISA ISMS-P 점검 항목을 Ansible로 자동 진단/조치하고 Streamlit 대시보드로 시각화하는 보안 자동화 프로젝트.",
     "problem": "반복적인 수동 보안 점검과 조치 작업을 자동화해 운영 효율과 검증 가능성을 높인다.",
-    "techStack": ["Streamlit", "PostgreSQL 16.11", "Ansible", "Python", "Bash", "Ubuntu 22.04.3 LTS", "Rocky Linux 9.7"],
+    "techStack": [
+      "Streamlit",
+      "PostgreSQL 16.11",
+      "Ansible",
+      "Python",
+      "Bash",
+      "Ubuntu 22.04.3 LTS",
+      "Rocky Linux 9.7"
+    ],
     "highlights": [
       "OS/서비스 상태 기반 자동 진단 및 조치",
       "Ansible Playbook/Role 기반 모듈형 보안 점검",
@@ -135,18 +185,20 @@
     "repoUrl": "https://github.com/woorung222/sw_project_team6",
     "visibility": "public",
     "media": {
-      "status": "available-in-readme-and-video",
-      "video": "video/sw_project_6.mp4",
-      "candidates": ["Loadmap", "DB Architecture", "Ansible Playbook Module Architecture"]
+      "status": "external-video-pending",
+      "video": null,
+      "candidates": [
+        "Loadmap",
+        "DB Architecture",
+        "Ansible Playbook Module Architecture"
+      ]
     },
-    "localSource": "C:\\Users\\User\\Documents\\GitHub\\sw_project_team6",
     "codeNotes": [
       "Ansible role의 check.yml / remediate.yml",
       "OS별 Bash 진단 스크립트",
       "Streamlit 대시보드 데이터 조회/시각화 코드"
     ],
-    "status": "partial-runnable",
-    "nextSteps": ["Ansible 대상 서버 요구사항 확인", "PostgreSQL/Streamlit 실행 검증", "대시보드 캡처"]
+    "status": "partial-runnable"
   },
   {
     "id": "cloud-ev-security",
@@ -154,11 +206,27 @@
     "period": "2026.03",
     "collectionOrder": 5,
     "displayPriority": 1,
-    "category": ["Cloud Security", "Backend", "DevOps"],
+    "category": [
+      "Cloud Security",
+      "Backend",
+      "DevOps"
+    ],
     "role": "MITRE ATT&CK 기반 시나리오 구현, Lambda 대응 로직, IAM/GuardDuty/EventBridge 연계, 문서 최신화에 참여",
     "summary": "AWS 기반 EV 충전 인프라 사이버 위협 탐지 및 자동 대응 시스템.",
     "problem": "EV 충전기/IoT 환경에서 발생 가능한 공격 이벤트를 탐지하고, Lambda 기반 자동 대응으로 피해 확산을 줄인다.",
-    "techStack": ["AWS IoT Core", "GuardDuty", "EventBridge", "Lambda", "IAM", "CloudWatch", "CloudTrail", "Terraform", "Python", "MQTT", "Slack Webhook"],
+    "techStack": [
+      "AWS IoT Core",
+      "GuardDuty",
+      "EventBridge",
+      "Lambda",
+      "IAM",
+      "CloudWatch",
+      "CloudTrail",
+      "Terraform",
+      "Python",
+      "MQTT",
+      "Slack Webhook"
+    ],
     "highlights": [
       "GuardDuty Finding을 EventBridge로 받아 Lambda 자동 대응 실행",
       "T0855/T0839/T1499/T1078/T1548/T1565 등 6종 공격 대응 매핑",
@@ -173,18 +241,20 @@
     "repoUrl": "https://github.com/sung0810/cloud-ev-security",
     "visibility": "public",
     "media": {
-      "status": "video-and-local-source",
-      "video": "video/aegis.mp4",
-      "candidates": ["AWS CloudWatch 대시보드", "Lambda 실행 결과", "아키텍처 다이어그램"]
+      "status": "external-video-pending",
+      "video": null,
+      "candidates": [
+        "AWS CloudWatch 대시보드",
+        "Lambda 실행 결과",
+        "아키텍처 다이어그램"
+      ]
     },
-    "localSource": "C:\\Users\\User\\Documents\\GitHub\\cloud-ev-security",
     "codeNotes": [
       "lambda/handler.py: 공격 유형별 대응 라우팅",
       "simulator/charger.py: 정상/공격 payload 시뮬레이션",
       "terraform/modules/*: IoT, Lambda, EventBridge, Monitoring 모듈"
     ],
-    "status": "partial-runnable",
-    "nextSteps": ["비밀값 없이 no-mqtt 시뮬레이션 검증", "Terraform 모듈 구조 캡처", "CloudWatch 대시보드 이미지 확보"]
+    "status": "partial-runnable"
   },
   {
     "id": "pentest-web",
@@ -192,11 +262,26 @@
     "period": "2026.04 ~ 2026.05",
     "collectionOrder": 6,
     "displayPriority": 2,
-    "category": ["Web Security", "Penetration Test"],
+    "category": [
+      "Web Security",
+      "Penetration Test"
+    ],
     "role": "취약점 재현, 영향도 분석, 개선 가이드 작성, 보안 검증 케이스 정리",
     "summary": "웹 서비스 대상 모의해킹/취약점 진단 프로젝트.",
     "problem": "인증, 권한, 파일 접근, CORS, 세션/쿠키 등 웹 보안 취약점을 식별하고 개선 방향을 도출한다.",
-    "techStack": ["Spring Boot 3.5.13", "Java 25", "Gradle", "Spring Data JPA", "Spring Validation", "Spring Web", "Spring Security Crypto", "AWS SDK S3", "H2", "MySQL", "Lombok"],
+    "techStack": [
+      "Spring Boot 3.5.13",
+      "Java 25",
+      "Gradle",
+      "Spring Data JPA",
+      "Spring Validation",
+      "Spring Web",
+      "Spring Security Crypto",
+      "AWS SDK S3",
+      "H2",
+      "MySQL",
+      "Lombok"
+    ],
     "highlights": [
       "웹 인증/권한 흐름 진단",
       "민감 파일/다운로드 경로 접근 제어 점검",
@@ -213,17 +298,19 @@
     "repoUrl": "https://github.com/woorung222/pentest",
     "visibility": "private",
     "media": {
-      "status": "video-and-local-source",
-      "video": "video/pentest.mp4",
-      "candidates": ["마스킹된 진단 리포트 캡처", "개선 전후 응답 헤더 비교", "안전한 데모 영상"]
+      "status": "external-video-pending",
+      "video": null,
+      "candidates": [
+        "마스킹된 진단 리포트 캡처",
+        "개선 전후 응답 헤더 비교",
+        "안전한 데모 영상"
+      ]
     },
-    "localSource": "C:\\Users\\User\\Desktop\\penenen\\pentest-web",
     "codeNotes": [
       "테스트/검증 스크립트 중 민감정보 없는 부분",
       "보안 설정 개선 코드",
       "취약점 조치 전후 diff 일부"
     ],
-    "status": "local-source-available",
-    "nextSteps": ["로컬 Spring Boot 실행 방법 확인", "공개 가능한 보안 증거자료 마스킹", "로컬 샘플 문서와 업로드 자료 민감정보 검토"]
+    "status": "local-source-available"
   }
 ]

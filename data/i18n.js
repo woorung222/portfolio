@@ -299,9 +299,9 @@ export const constellationText = {
     "cloud-ev-security": {
       motif: "Shield Radar",
       stars: {
-        guardduty: ["GuardDuty", "위협 탐지의 시작점. GuardDuty Finding을 이벤트 기반 대응 흐름으로 연결한다.", ["README MITRE ATT&CK 대응 매핑", "video/aegis.mp4"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]],
+        guardduty: ["GuardDuty", "위협 탐지의 시작점. GuardDuty Finding을 이벤트 기반 대응 흐름으로 연결한다.", ["README MITRE ATT&CK 대응 매핑", "시연 영상 서버 이전 예정"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]],
         eventbridge: ["이벤트/아키텍처 흐름", "IoT Core, GuardDuty, EventBridge, Lambda, 저장소와 알림이 이어지는 전체 이벤트 흐름.", ["AEGIS 전체 아키텍처"], ["terraform/modules/eventbridge"]],
-        lambda: ["Lambda 대응", "공격 유형별 대응을 분기해 격리, 차단, 로그 보존 같은 조치를 실행한다.", ["Lambda 실행 결과 후보", "video/aegis.mp4"], ["lambda/handler.py"]],
+        lambda: ["Lambda 대응", "공격 유형별 대응을 분기해 격리, 차단, 로그 보존 같은 조치를 실행한다.", ["Lambda 실행 결과 후보", "시연 영상 서버 이전 예정"], ["lambda/handler.py"]],
         isolate: ["IoT 격리", "IoT 정책 분리와 인증서 revoke로 공격 확산을 줄이는 자동 대응 포인트.", ["T0855/T1078 대응 매핑"], ["terraform/modules/iot", "lambda/handler.py"]],
         evidence: ["관측/감사 로그", "CloudWatch 지표, CloudTrail 감사 로그, DynamoDB 이벤트 저장으로 대응 이후 추적성을 확보한다.", ["코드 기반 관측/감사 구조"], ["terraform/modules/monitoring"]],
         dashboard: ["운영 대시보드", "지도, 이벤트 로그, 공격 시뮬레이터, 충전기 상태를 보는 AEGIS 운영 화면.", ["AEGIS 대시보드 화면"], ["lambda/stats_handler.py", "lambda/simulate_handler.py"]]
@@ -368,9 +368,9 @@ export const constellationText = {
     "cloud-ev-security": {
       motif: "Shield Radar",
       stars: {
-        guardduty: ["GuardDuty", "The starting point for threat detection. GuardDuty findings are connected to an event-driven response flow.", ["README MITRE ATT&CK response mapping", "video/aegis.mp4"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]],
+        guardduty: ["GuardDuty", "The starting point for threat detection. GuardDuty findings are connected to an event-driven response flow.", ["README MITRE ATT&CK response mapping", "Demo video migration planned"], ["terraform/modules/guardduty", "terraform/modules/eventbridge"]],
         eventbridge: ["Event / Architecture Flow", "End-to-end event flow connecting IoT Core, GuardDuty, EventBridge, Lambda, storage, and notifications.", ["AEGIS full architecture"], ["terraform/modules/eventbridge"]],
-        lambda: ["Lambda Response", "Branches response actions by attack type, including isolation, blocking, and log preservation.", ["Lambda execution result candidate", "video/aegis.mp4"], ["lambda/handler.py"]],
+        lambda: ["Lambda Response", "Branches response actions by attack type, including isolation, blocking, and log preservation.", ["Lambda execution result candidate", "Demo video migration planned"], ["lambda/handler.py"]],
         isolate: ["IoT Isolation", "Automated response point that reduces spread through IoT policy separation and certificate revoke.", ["T0855/T1078 response mapping"], ["terraform/modules/iot", "lambda/handler.py"]],
         evidence: ["Observability / Audit Logs", "Preserves traceability after response through CloudWatch metrics, CloudTrail audit logs, and DynamoDB event storage.", ["Code-based observability and audit structure"], ["terraform/modules/monitoring"]],
         dashboard: ["Operations Dashboard", "AEGIS operator screen for maps, event logs, attack simulation, and charger security status.", ["AEGIS dashboard screen"], ["lambda/stats_handler.py", "lambda/simulate_handler.py"]]
