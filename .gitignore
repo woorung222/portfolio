@@ -1,16 +1,3 @@
 node_modules/
-.next/
-out/
-*.log
-.env*
-!.env.example
-
-# Local source materials and extraction scratch files
-docs/
-.plan-inspect/
-tmp_*
-tmp_aegis_pptx_extract/
-.deploy/
-/video/
-/public/video/
-/ssh/
+dist/
+.env.local
